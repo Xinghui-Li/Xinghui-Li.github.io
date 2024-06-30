@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Xinghui Li</title>
+
+    <meta name="author" content="Xinghui Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Xinghui Li
+                </p>
+                <p>
+                I am a final year DPhil Student at <a href="https://www.robots.ox.ac.uk/ActiveVision/">Active Vision Lab</a> in University of Oxford. 
+                I am supervised by Professor <a href="https://www.robots.ox.ac.uk/~victor//">Victor Adrain Prisacariu</a>. 
+                I took my undergraduate studies at University of Oxford as well and received Master of Engineering with First Class Honour.
+                </p>
+                <p>
+                  My research interest includes image feature matching, camera visual localization and generative models.
+                </p>
+                <p style="color: red;">
+                  I am currently looking for full-time positions.  
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:xinghui@robots.ox.ac.uk">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Xinghui_Li_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=XLlgbBoAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/xinghui-li-4b73a9146/">Linkedin</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/Xinghui_Li_photo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Xinghui_Li_photo.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Recent News</h2>
+                <p>
+                  &bull; I will join Meta as a Research Scientist Intern working on 3D vision and eye tracking from July 2024.
+                </p>
+                <p>
+                  &bull;  <a href="https://arxiv.org/abs/2405.10255">A survey on LLM in 3D vision is now on ArXiv</a>.
+                </p>
+                <p>
+                  &bull; Two papers accepted to CVPR 2024.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+    
+    
+
+    <!-- LLM 3D -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <h2 style="padding:20px">Projects</h2>
+    <tr onmouseout="llm_3d_stop()" onmouseover="llm_3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='llm_3d_2'>
+          <img src='images/3d_llm_2.png' width="240">
+          </div>
+          <img src='images/3d_llm_1.png' width="240" id='llm_3d_1'>
+        </div>
+        <script type="text/javascript">
+          function llm_3d_start() {
+            document.getElementById('llm_3d_1').style.opacity = "0";
+            document.getElementById('llm_3d_2').style.opacity = "1";
+          }
+
+          function llm_3d_stop() {
+            document.getElementById('llm_3d_1').style.opacity = "1";
+            document.getElementById('llm_3d_2').style.opacity = "0";
+          }
+          llm_3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2405.10255">
+			  <span class="papertitle">When LLMs step into the 3D World: A Survey and Meta-Analysis of 3D Tasks via Multi-modal Large Language Models</span>
+        </a>
+        <br>
+				<a href="https://xianzhengma.github.io/">Xianzheng Ma</a>*,
+        <a href="https://yashbhalgat.github.io/">Yash Bhalgat</a>*, 
+        <a href="https://www.robots.ox.ac.uk/ActiveVision/People/index.html">Brandon Smart</a>*,
+        <a href="https://chenusc11.github.io/">Shuai Chen</a>, 
+				<strong>Xinghui Li</strong>,
+        <a href="https://dingjiansw101.github.io/">Jian Ding</a>,
+        <a href="https://jindonggu.github.io/">Jindong Gu</a>,
+        <a href="https://daveredrum.github.io/">Dave Zhenyu Chen</a>,
+        <a href="https://pengsongyou.github.io/">Songyou Peng</a>,
+        <a href="https://jwbian.net/">Jia-Wang Bian</a>,
+        <a href="https://www.robots.ox.ac.uk/~phst/">Philip Torr</a>,
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
+        <a href="https://niessnerlab.org/">Matthias Nießner</a>,
+        <a href="https://scholar.google.co.uk/citations?user=ATkNLcQAAAAJ&hl=en">Ian Reid</a>,
+        <a href="https://angelxuanchang.github.io/">Angel X. Chang</a>,
+        <a href="https://scholar.google.de/citations?user=n9nXAPcAAAAJ&hl=en">Iro Laina</a>,
+        <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+        <br>
+        <em>ArXiv</em>, 2024
+        <br>
+        <a href="https://github.com/ActiveVisionLab/Awesome-LLM-3D">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.10255">paper</a>
+        <p></p>
+        <p>
+          A survey paper that provides a comprehensive overview of the methodologies enabling LLMs to process, understand, and generate 3D data.</p>
+      </td>
+    </tr>
+
+    <!-- GuassCtrl -->
+    <tr onmouseout="gaussctrl_stop()" onmouseover="gaussctrl_start()">
+      <td style="padding-left:55px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='gaussctrl_2' width="240">
+          <video  width=100% muted autoplay loop>
+          <source src="video/gaussctrl_2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          </div>
+          <div class="two" id='gaussctrl_1' width="240">
+            <video  width=100% muted autoplay loop>
+            <source src="video/gaussctrl_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+        <script type="text/javascript">
+          function gaussctrl_start() {
+            document.getElementById('gaussctrl_2').style.opacity = "1";
+          }
+
+          function gaussctrl_stop() {
+            document.getElementById('gaussctrl_2').style.opacity = "0";
+          }
+          gaussctrl_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://gaussctrl.active.vision/">
+        <span class="papertitle">GaussCtrl: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing</span>
+        </a>
+        <br>
+				<a href="https://jingwu2121.github.io/">Jing Wu</a>*,
+				<a href="https://jwbian.net/">Jia-Wang Bian</a>*,
+				<strong>Xinghui Li</strong>,
+				<a href="https://wanggrun.github.io/">Guangrun Wang</a>,
+				<a href="https://scholar.google.co.uk/citations?user=ATkNLcQAAAAJ&hl=en">Ian Reid</a>,
+				<a href="https://www.robots.ox.ac.uk/~phst/">Philip Torr</a>,
+				<a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+        <br>
+        <em>ArXiv</em>, 2024
+        <br>
+        <a href="https://gaussctrl.active.vision/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2403.08733">paper</a>
+        <p></p>
+        <p>
+        Text-driven multiview-consistent 3D Gaussian Splatting Editing through depth control and attention alignment.
+      </td>
+    </tr>
+
+    <!-- NeFeS -->
+    <tr onmouseout="NeFeS_stop()" onmouseover="NeFeS_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='NeFeS_image'><video  width="240" muted autoplay loop>
+          <source src="videos/NeFeS.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/nfs_arch.png' width="240">
+        </div>
+        <script type="text/javascript">
+          function NeFeS_start() {
+            document.getElementById('NeFeS_image').style.opacity = "1";
+          }
+
+          function NeFeS_stop() {
+            document.getElementById('NeFeS_image').style.opacity = "0";
+          }
+          NeFeS_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://nefes.active.vision/">
+        <span class="papertitle">Neural Refinement for Absolute Pose Regression with Feature Synthesis</span>
+        </a>
+        <br>
+        <a href="https://chenusc11.github.io/">Shuai Chen</a>, 
+        <a href="https://yashbhalgat.github.io">Yash Bhalgat</a>, 
+        <strong>Xinghui Li</strong>,
+        <a href="https://jwbian.net">Jiawang Bian</a>, 
+        <a href="https://likojack.github.io/kejieli/#/home">Kejie Li</a>, 
+        <a href="https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en/">Zirui Wang</a>, 
+        <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="http://nefes.active.vision/">project page</a> /
+        <a href="https://arxiv.org/abs/2303.10087">paper</a> /
+        <a href="https://github.com/ActiveVisionLab/NeFeS">code</a> /
+        <a href="nefes_author_bio/index.html">author bios</a>  
+        <p></p>
+        <p>A post-process for refining generic APRs using neural feature fields.</p>
+      </td>
+    </tr>
+	
+   <!-- SD4Match -->
+   <tr onmouseout="sd4match_stop()" onmouseover="sd4match_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='sd4match_image'>
+          <img src='images/sd4match_bird_1.gif' width="240">
+        </div>
+        <img src='images/sd4match_bird_1.png' width="240">
+      </div>
+      <script type="text/javascript">
+        function sd4match_start() {
+          document.getElementById('sd4match_image').style.opacity = "1";
+        }
+
+        function sd4match_stop() {
+          document.getElementById('sd4match_image').style.opacity = "0";
+        }
+        sd4match_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://sd4match.active.vision/">
+      <span class="papertitle">SD4Match: Learning to Prompt Stable Diffusion Model for Semantic Matching</span>
+      </a>
+      <br>
+      <strong>Xinghui Li</strong>,
+      Jingyi Lu,
+      <a href="https://www.kaihan.org/">Kai Han</a>, 
+      <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+      <br>
+      <em>CVPR</em>, 2024
+      <br>
+      <a href="https://sd4match.active.vision/">project page</a> /
+      <a href="https://arxiv.org/abs/2310.17569">paper</a> /
+      <a href="https://github.com/ActiveVisionLab/SD4Match">code</a>
+      <p></p>
+      <p>Enhancing the discriminative power of Stable Diffusion on semantic matching by prompt tuning.</p>
+    </td>
+  </tr>
+
+  <!-- DualRC-PAMI -->
+    <tr onmouseout="dualrc_pami_stop()" onmouseover="dualrc_pami_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='dualrc_pami_2'>
+          <img src='images/dualrc_pami_2.png' width="240">
+          </div>
+          <img src='images/dualrc_pami_1.png' width="240" id='dualrc_pami_1'>
+        </div>
+        <script type="text/javascript">
+          function dualrc_pami_start() {
+            document.getElementById('dualrc_pami_1').style.opacity = "0";
+            document.getElementById('dualrc_pami_2').style.opacity = "1";
+          }
+
+          function dualrc_pami_stop() {
+            document.getElementById('dualrc_pami_1').style.opacity = "1";
+            document.getElementById('dualrc_pami_2').style.opacity = "0";
+          }
+          dualrc_pami_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/document/10255317">
+        <span class="papertitle">DualRC: A Dual-Resolution Learning Framework With Neighbourhood Consensus for Visual Correspondences</span>
+        </a>
+        <br>
+        <strong>Xinghui Li</strong>,
+        <a href="https://www.kaihan.org/">Kai Han</a>, 
+        <a href="https://www.linkedin.com/in/shuda-li-3a29a69/?originalSubdomain=uk">Shuda Li</a>,
+        <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+        <br>
+        <em>TPAMI</em>, 2023
+        <br>
+        <a href="https://ieeexplore.ieee.org/document/10255317">paper</a> /
+        <a href="https://github.com/ActiveVisionLab/DualRC-Net">code</a>
+        <p></p>
+        <p>
+          A flexible framework to learn both geometric and semantic matching.</p>
+      </td>
+    </tr>
+
+  <!-- SimSC -->
+    <tr onmouseout="simsc_stop()" onmouseover="simsc_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='simsc_2'>
+          <img src='images/simsc_2.png' width="240">
+          </div>
+          <img src='images/simsc_1.png' width="240" id="simsc_1">
+        </div>
+        <script type="text/javascript">
+          function simsc_start() {
+            document.getElementById('simsc_1').style.opacity = "0";
+            document.getElementById('simsc_2').style.opacity = "1";
+          }
+
+          function simsc_stop() {
+            document.getElementById('simsc_1').style.opacity = "1";
+            document.getElementById('simsc_2').style.opacity = "0";
+          }
+          simsc_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2305.02385">
+        <span class="papertitle">SimSC: A Simple Framework for Semantic Correspondence with Temperature Learning</span>
+        </a>
+        <br>
+        <strong>Xinghui Li</strong>,
+        <a href="https://www.kaihan.org/">Kai Han</a>, 
+        <a href="https://xingchen.one/">Xingchen Wan</a>,
+        <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+        <br>
+        <em>ArXiv</em>, 2023
+        <br>
+        <a href="https://arxiv.org/abs/2305.02385">paper</a>
+        <p></p>
+        <p>
+          A simple temperature learning framework that enables accurate semantic matching using feature backbone only.</p>
+      </td>
+    </tr>
+
+<!-- DFNet -->
+<tr onmouseout="DFNet_stop()" onmouseover="DFNet_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='DFNet_image'><video  width="240" muted autoplay loop>
+      <source src="videos/DFNet2.mov" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
+      <img src='images/DFNet1.png' width="240">
+    </div>
+    <script type="text/javascript">
+      function DFNet_start() {
+        document.getElementById('DFNet_image').style.opacity = "1";
+      }
+
+      function DFNet_stop() {
+        document.getElementById('DFNet_image').style.opacity = "0";
+      }
+      DFNet_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2204.00559">
+      <papertitle>DFNet: Enhance Absolute Pose Regression with Direct Feature Matching</papertitle>
+    </a>
+    <br>
+    <a href="https://chenusc11.github.io/">Shuai Chen</a>, 
+    <strong>Xinghui Li</strong>, 
+    <a href="https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en/">Zirui Wang</a>, 
+    <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+    <br>
+    <em>ECCV</em>, 2022
+    <br>
+    <a href="https://dfnet.active.vision/">project page</a> /
+    <a href="https://arxiv.org/abs/2204.00559">paper</a> /
+    <a href="https://github.com/ActiveVisionLab/DFNet">code</a>  
+    <p></p>
+    <p>Leveraging luma-prior NeRF and direct feature matching to enhance 6-DoF camera pose regression approaches.</p>
+  </td>
+</tr>
+
+<!-- Disentangle -->
+<tr onmouseout="disentangle_stop()" onmouseover="disentangle_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='disentangle_image'><video  width="240" muted autoplay loop>
+      <source src="videos/disentangle_2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
+      <img src='images/disentangle_1.png' width="240">
+    </div>
+    <script type="text/javascript">
+      function disentangle_start() {
+        document.getElementById('disentangle_image').style.opacity = "1";
+      }
+
+      function disentangle_stop() {
+        document.getElementById('disentangle_image').style.opacity = "0";
+      }
+      disentangle_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2208.03167">
+      <papertitle>Disentangling 3D Attributes from a Single 2D Image: Human Pose, Shape and Garment</papertitle>
+    </a>
+    <br>
+    <a href="https://scholar.google.com/citations?user=6o7ZEuUAAAAJ&hl=en">Xue Hu</a>*, 
+    <strong>Xinghui Li</strong>*, 
+    <a href="https://www.cs.cit.tum.de/camp/members/benjamin-busam/">Benjamin Busam</a>, 
+    <a href="https://scholar.google.com.sg/citations?user=sZU8ZsQAAAAJ&hl=en">Yiren Zhou</a>, 
+    <a href="https://scholar.google.co.uk/citations?user=BEFl4j0AAAAJ&hl=en">Ales Leonardis</a>, 
+    <a href="https://shanxinyuan.github.io/">Shanxin Yuan</a>
+    <br>
+    <em>BMVC</em>, 2022
+    <br>
+    <a href="https://bmvc2022.mpi-inf.mpg.de/0031.pdf">paper</a>
+    <p></p>
+    <p>A 2D-to-3D disentanglment framework that learn pose, shape and garment attributes of a dressed human.</p>
+  </td>
+</tr>
+
+<!-- DualRC-Net -->
+<tr onmouseout="dualrcnet_stop()" onmouseover="dualrcnet_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='dualrcnet_image_2'>
+      <img src='images/dualrcnet_2.png' width="240">
+      </video></div>
+      <img src='images/dualrcnet_1.png' width="240" id="dualrcnet_image_1">
+    </div>
+    <script type="text/javascript">
+      function dualrcnet_start() {
+        document.getElementById('dualrcnet_image_1').style.opacity = "0";
+        document.getElementById('dualrcnet_image_2').style.opacity = "1";
+      }
+
+      function dualrcnet_stop() {
+        document.getElementById('dualrcnet_image_1').style.opacity = "1";
+        document.getElementById('dualrcnet_image_2').style.opacity = "0";
+      }
+      dualrcnet_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://dualrcnet.active.vision/">
+      <papertitle>Dual-Resolution Correspondence Networks</papertitle>
+    </a>
+    <br>
+    <strong>Xinghui Li</strong>,
+    <a href="https://www.kaihan.org/">Kai Han</a>, 
+    <a href="https://www.linkedin.com/in/shuda-li-3a29a69/?originalSubdomain=uk">Shuda Li</a>,
+    <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+    <br>
+    <em>NeurIPS</em>, 2020
+    <br>
+    <a href="https://dualrcnet.active.vision/">project page</a> /
+    <a href="https://papers.nips.cc/paper_files/paper/2020/file/c91591a8d461c2869b9f535ded3e213e-Paper.pdf">paper</a> /
+    <a href="https://github.com/ActiveVisionLab/DualRC-Net">code</a>
+    <p></p>
+    <p>A dual-resolution network that adapts 4D neighbourhood consensus filtering to high-resolution images.</p>
+  </td>
+</tr>
+
+</tbody>
+</table>
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+  <br>
+  <td style="padding:20px;width:100%;vertical-align:middle">
+    <h2>Academic Services</h2>
+    <p>
+      <b>Conference Reviewer:</b> CVPR 2023, 2024; ICCV 2023; ECCV 2024; NeurIPS 2024; AAAI 2023, 2024 <br>
+    </p>
+    <p>
+      <b>Journal Reviewer:</b> TIP 2023, 2024 <br>
+    </p>
+  </td>
+</tr>
+</tbody></table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+      <br>
+      <p align="left">
+        <font size="2">
+        Website template borrowed from <a href="https://jonbarron.info">Jon Barron</a>. <br>
+    </font>
+      </p>
+      </td>
+    </tr>
+    </table>
+
+</td>
+</tr>
+</table>
+</body>
+</html>
