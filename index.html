@@ -30,6 +30,9 @@
                 <p>
                   My research interest includes image feature matching, camera visual localization and generative models.
                 </p>
+                <p>
+                  I joined Meta as a research scientist intern starting from July 2024.
+                </p>
                 <p style="color: red;">
                   I am currently looking for full-time positions.  
                 </p>
@@ -50,7 +53,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Recent News</h2>
                 <p>
-                  &bull; I will join Meta as a Research Scientist Intern working on 3D vision and eye tracking from July 2024.
+                  &bull; Two papers accepted to ECCV 2024.
                 </p>
                 <p>
                   &bull;  <a href="https://arxiv.org/abs/2405.10255">A survey on LLM in 3D vision is now on ArXiv</a>.
@@ -61,12 +64,109 @@
               </td>
             </tr>
           </tbody></table>
-    
-    
 
-    <!-- LLM 3D -->
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <h2 style="padding:20px">Projects</h2>
+
+    <!-- RegionDrag -->
+    <tr onmouseout="regiondrag_stop()" onmouseover="regiondrag_start()">
+      <td style="padding-left:55px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='regiondrag_image'>
+            <img src='images/regiondrag_toy.gif' width="180">
+          </div>
+          <img src='images/regiondrag_toy.png' width="180">
+        </div>
+        <script type="text/javascript">
+          function regiondrag_start() {
+            document.getElementById('regiondrag_image').style.opacity = "1";
+          }
+  
+          function regiondrag_stop() {
+            document.getElementById('regiondrag_image').style.opacity = "0";
+          }
+          regiondrag_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://lujingyi-john.github.io/RegionDrag/">
+        <span class="papertitle">RegionDrag: Fast Region-Based Image Editing with Diffusion Models</span>
+        </a>
+        <br>
+        Jingyi Lu,
+        <strong>Xinghui Li</strong>,
+        <a href="https://www.kaihan.org/">Kai Han</a>,
+        <br>
+        <em>ECCV</em>, 2024
+        <br>
+        <a href="https://lujingyi-john.github.io/RegionDrag/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2407.18247">paper</a>
+        /
+        <a href="https://github.com/LuJingyi-John/RegionDrag">code</a>
+        <p></p>
+        <p>
+        A fast and versatile region-based image editing method. 
+      </td>
+    </tr>
+
+    <!-- GuassCtrl -->
+    <tr onmouseout="gaussctrl_stop()" onmouseover="gaussctrl_start()">
+      <td style="padding-left:70px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='gaussctrl_2' width="240">
+          <video  width=100% muted autoplay loop>
+          <source src="video/gaussctrl_2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          </div>
+          <div class="two" id='gaussctrl_1' width="240">
+            <video  width=100% muted autoplay loop>
+            <source src="video/gaussctrl_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+        <script type="text/javascript">
+          function gaussctrl_start() {
+            document.getElementById('gaussctrl_1').style.opacity = "0";
+            document.getElementById('gaussctrl_2').style.opacity = "1";
+          }
+
+          function gaussctrl_stop() {
+            document.getElementById('gaussctrl_1').style.opacity = "1";
+            document.getElementById('gaussctrl_2').style.opacity = "0";
+          }
+          gaussctrl_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://gaussctrl.active.vision/">
+        <span class="papertitle">GaussCtrl: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing</span>
+        </a>
+        <br>
+        <a href="https://jingwu2121.github.io/">Jing Wu</a>*,
+        <a href="https://jwbian.net/">Jia-Wang Bian</a>*,
+        <strong>Xinghui Li</strong>,
+        <a href="https://wanggrun.github.io/">Guangrun Wang</a>,
+        <a href="https://scholar.google.co.uk/citations?user=ATkNLcQAAAAJ&hl=en">Ian Reid</a>,
+        <a href="https://www.robots.ox.ac.uk/~phst/">Philip Torr</a>,
+        <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+        <br>
+        <em>ECCV</em>, 2024
+        <br>
+        <a href="https://gaussctrl.active.vision/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2403.08733">paper</a>
+        /
+        <a href="https://github.com/ActiveVisionLab/gaussctrl">code</a>
+        <p></p>
+        <p>
+        Text-driven multiview-consistent 3D Gaussian Splatting Editing through depth control and attention alignment.
+      </td>
+    </tr>
+
+    <!-- LLM 3D -->
     <tr onmouseout="llm_3d_stop()" onmouseover="llm_3d_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -122,59 +222,7 @@
       </td>
     </tr>
 
-    <!-- GuassCtrl -->
-    <tr onmouseout="gaussctrl_stop()" onmouseover="gaussctrl_start()">
-      <td style="padding-left:55px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='gaussctrl_2' width="240">
-          <video  width=100% muted autoplay loop>
-          <source src="video/gaussctrl_2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-          </div>
-          <div class="two" id='gaussctrl_1' width="240">
-            <video  width=100% muted autoplay loop>
-            <source src="video/gaussctrl_1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-            </div>
-        </div>
-        <script type="text/javascript">
-          function gaussctrl_start() {
-            document.getElementById('gaussctrl_1').style.opacity = "0";
-            document.getElementById('gaussctrl_2').style.opacity = "1";
-          }
 
-          function gaussctrl_stop() {
-            document.getElementById('gaussctrl_1').style.opacity = "1";
-            document.getElementById('gaussctrl_2').style.opacity = "0";
-          }
-          gaussctrl_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://gaussctrl.active.vision/">
-        <span class="papertitle">GaussCtrl: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing</span>
-        </a>
-        <br>
-				<a href="https://jingwu2121.github.io/">Jing Wu</a>*,
-				<a href="https://jwbian.net/">Jia-Wang Bian</a>*,
-				<strong>Xinghui Li</strong>,
-				<a href="https://wanggrun.github.io/">Guangrun Wang</a>,
-				<a href="https://scholar.google.co.uk/citations?user=ATkNLcQAAAAJ&hl=en">Ian Reid</a>,
-				<a href="https://www.robots.ox.ac.uk/~phst/">Philip Torr</a>,
-				<a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
-        <br>
-        <em>ArXiv</em>, 2024
-        <br>
-        <a href="https://gaussctrl.active.vision/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2403.08733">paper</a>
-        <p></p>
-        <p>
-        Text-driven multiview-consistent 3D Gaussian Splatting Editing through depth control and attention alignment.
-      </td>
-    </tr>
 
     <!-- NeFeS -->
     <tr onmouseout="NeFeS_stop()" onmouseover="NeFeS_start()">
