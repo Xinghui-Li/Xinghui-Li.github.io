@@ -23,16 +23,13 @@
                   Xinghui Li
                 </p>
                 <p>
-                I am a PhD graduate from the <a href="https://www.robots.ox.ac.uk/ActiveVision/">Active Vision Lab</a> of the University of Oxford 
+                I am an AI Scientist from Mistral AI. I obtained my PhD from the <a href="https://www.robots.ox.ac.uk/ActiveVision/">Active Vision Lab</a> of the University of Oxford 
 		supervised by Professor <a href="https://www.robots.ox.ac.uk/~victor//">Victor Adrian Prisacariu</a>. 
                 I took my undergraduate studies at University of Oxford as well and received Master of Engineering with First Class Honour.
                 </p>
                 <p>
-                  My research interest includes image feature matching, camera visual localization and generative models.
+                  My research interest includes 3D computer vision, generative model amd multimodal LLM.
                 </p>
-<!--                 <p style="color: red;">
-                  I am currently looking for full-time positions.  
-                </p> -->
                 <p style="text-align:center">
                   <a href="mailto:xinghui.li95@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="data/Xinghui_Li_CV.pdf">CV</a> &nbsp;/&nbsp;
@@ -49,14 +46,11 @@
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Recent News</h2>
-<!-- 		<p>
-                  &bull; I will join Google DeepMind as a research engineer in early 2025.
-                </p> -->
                 <p>
-                  &bull; Two papers accepted to ECCV 2024.
+                  &bull; <a href="https://arxiv.org/pdf/2505.18060">Our survey</a> in semantic correspondence is accepted by TPAMI.
                 </p>
-                <p>
-                  &bull;  <a href="https://arxiv.org/abs/2405.10255">A survey on LLM in 3D vision is now on ArXiv</a>.
+		            <p>
+                  &bull; I joined Mistral AI as an AI Scientist in London.
                 </p>
               </td>
             </tr>
@@ -64,6 +58,56 @@
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <h2 style="padding:20px">Projects</h2>
+
+    <!-- OxDaN -->
+    <tr onmouseout="oxdan_stop()" onmouseover="oxdan_start()">
+      <td style="padding-left:77px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='oxdan_2'>
+          <img src='images/oxdan_2.png' width="140">
+          </div>
+          <img src='images/oxdan_1.png' width="140" id='oxdan_1'>
+        </div>
+        <script type="text/javascript">
+          function oxdan_start() {
+            document.getElementById('oxdan_1').style.opacity = "0";
+            document.getElementById('oxdan_2').style.opacity = "1";
+          }
+
+          function oxdan_stop() {
+            document.getElementById('oxdan_1').style.opacity = "1";
+            document.getElementById('oxdan_2').style.opacity = "0";
+          }
+          oxdan_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://oxdan.active.vision/">
+        <span class="papertitle">Seeing in the Dark: Benchmarking Egocentric 3D Vision with the Oxford Day-and-Night Dataset</span>
+        </a>
+        <br>
+        <a href="https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en/">Zirui Wang</a>*,
+        <a href="https://jwbian.net/">Wenjing Bian</a>*,
+        <strong>Xinghui Li</strong>*,
+        <a href="https://yifutao.github.io/">Yifu Tao</a>,
+        Jianeng Wang,
+        <a href="https://ori.ox.ac.uk/people/maurice-fallon/">Maurice Fallon</a>,
+        <a href="https://www.robots.ox.ac.uk/~victor/">Victor Adrian Prisacariu</a>
+        <br>
+        <em>NeurIPS</em>, 2025
+        <br>
+        <a href="https://oxdan.active.vision/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2506.04224">paper</a>
+        /
+        <a href="https://huggingface.co/datasets/active-vision-lab/oxford-day-and-night">data</a>
+        /
+        <a href="https://youtu.be/CTPShasIGOo">video</a>
+        <p></p>
+        <p>
+        A large-scale egocentric dataset capturing over 30 km of trajectories across five Oxford locations for benchmarking 3D vision under extreme illumination changes.
+      </td>
+    </tr>
 
     <!-- RegionDrag -->
     <tr onmouseout="regiondrag_stop()" onmouseover="regiondrag_start()">
